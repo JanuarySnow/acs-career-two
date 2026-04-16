@@ -587,8 +587,10 @@ func _on_part_selected(index: int) -> void:
 		return
 	if _current_category_node is Brakes:
 		_update_brake_upgrade_preview()
+		return
 	elif _current_category_node is CarEngine:
 		_update_engine_upgrade_preview()
+		return
 	elif _current_category_node is Electronics:
 		_update_electronics_upgrade_preview()
 		return
